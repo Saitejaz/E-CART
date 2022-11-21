@@ -44,7 +44,7 @@ const Header = () => {
             <Dropdown.Toggle variant="success">
               <FaShoppingCart color="white" fontSize="15px" />
 
-              <Badge>{cart.length}</Badge>
+              <Badge style={{borderRadius:"50%" ,}}>{cart.length}</Badge>
             </Dropdown.Toggle>
 
             <Dropdown.Menu style={{ minwidth: 500 }}>
@@ -56,6 +56,7 @@ const Header = () => {
                         src={val.image}
                         className="cartItemImg"
                         alt={val.name}
+                        style={{height:"70px"}}
                       />
                       <div className="cartItemDetail">
                         <span>{val.name}</span>
