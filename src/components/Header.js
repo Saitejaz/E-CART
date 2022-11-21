@@ -19,16 +19,16 @@ const Header = () => {
     productDispatch,
   } = CartState();
   return (
-    <Navbar bg="dark" variant="dark" className="Navbar">
+    <Navbar variant="dark" className="Navbar" style={{backgroundColor:"#343A5C"}}>
       <Container>
         <Navbar.Brand>
-          <Link href="/" style={{ color: "white" }}>
-            CART
+          <Link href="/" style={{marginLeft:"-170px", color: "white" }}>
+            E - CART
           </Link>
         </Navbar.Brand>
         <Navbar.Text className="search">
           <FormControl
-            style={{ width: 500 }}
+            style={{ width: 500 ,borderRadius:"20px"}}
             placeholder="Search..."
             className="m-auto"
             onChange={(e) => {

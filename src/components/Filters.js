@@ -13,7 +13,7 @@ const Filters = () => {
  
   //console.log( byRating, byFastDelivery,byAscending,byDescending,sort);
   return (
-    <div className="filters">
+    <div className="filters" style={{backgroundColor:"#343A5C"}}>
       <span className="title">Filter Products</span>
       <span>
         <Form.Check
